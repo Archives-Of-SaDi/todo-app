@@ -12,7 +12,7 @@ export const postApi = createApi({
     }),
     getOnePost: build.query<IPost, number>({
       query: id => ({
-        url: 'posts' + id,
+        url: 'posts/' + id,
       }),
       providesTags: ['Post'],
     }),
